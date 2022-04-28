@@ -80,15 +80,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
@@ -326,10 +318,15 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    list-style-type: none;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
+}
+
+.nav li a{
+    text-decoration: none;
 }
 
 .nav > li a:hover,
@@ -360,6 +357,17 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+.citation p{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.text-center{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -699,13 +707,26 @@ p {
     font-weight: 700;
 }
 
+.btn-atomic-tangerine{
+    background-color: #A72831;
+}
+
+.btn-atomic-tangerine:hover{
+    background-color: #c27956;
+}
+
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    margin-left: 10%;
+    
 }
 
 h2 {
     font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     line-height: 1.4em;
 }
 
@@ -753,7 +774,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(50, 46, 32, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,21 +792,30 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #A72831;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.btn-atomic-tangerine {
-    background: #F3976C;
+#button {
+    background: #A72831;
     color: #FFFFFF!important;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+    transition: all .3s ease-in-out;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.btn-atomic-tangerine:hover {
+#button:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: black!important;
+    cursor: pointer;
 }
 
 .ltc-white {
